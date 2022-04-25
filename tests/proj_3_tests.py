@@ -1,7 +1,17 @@
+import logging
+
+from app import db
+from app.db.models import User, Song
+
 """Tests for Login"""
 
-"""Tests for Registration"""
+def login_test(self):
+    caitlin = User(email = "caitlin@test.com", password = "password")
+    db.session.add(caitlin)
+    rv = self.login('caitlin','password')
+    assert 'Welcome' in rv.data
 
+"""Tests for Registration"""
 """Tests for Accessing Dashboard as a Logged in User"""
 
 """Tests for Denying Access to Dashboard"""
