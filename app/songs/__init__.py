@@ -22,7 +22,7 @@ def songs_browse(page):
     pagination = Song.query.paginate(page, per_page, error_out=False)
     data = pagination.items
     try:
-        return render_template('songs_browse.html',data=data,pagination=pagination)
+        return render_template('browse_songs.html',data=data,pagination=pagination)
     except TemplateNotFound:
         abort(404)
 
@@ -41,12 +41,12 @@ def songs_upload():
         with open(filepath) as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
-                list_of_songs.append(Song(row['Name'],row['Artist']))
+                list_of_songs.append(Song(row['Name'],row['Artist'], row['Year'], row['Genre']))
 
         current_user.songs = list_of_songs
         db.session.commit()
 
-        return redirect(url_for('songs.songs_browse'))
+        return redirect(url_for('songs.browse_songs'))
 
     try:
         return render_template('upload.html', form=form)
