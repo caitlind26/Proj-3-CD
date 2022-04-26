@@ -2,7 +2,7 @@ import csv
 import logging
 import os
 
-from flask import Blueprint, render_template, abort, url_for,current_app
+from flask import Flask, Blueprint, render_template, abort, url_for,current_app
 from flask_login import current_user, login_required
 from jinja2 import TemplateNotFound
 
@@ -15,6 +15,10 @@ songs = Blueprint('songs', __name__,
                         template_folder='templates')
 
 upload = Blueprint('upload', __name__, template_folder='templates' )
+
+UPLOAD_FOLDER = '/path/to/uploads'
+app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @songs.route('/songs', methods=['GET'], defaults={"page": 1})
 @songs.route('/songs/<int:page>', methods=['GET'])
@@ -43,7 +47,7 @@ def songs_upload():
         with open(filepath) as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
-                list_of_songs.append(Song(row['Name'],row['Artist']))
+                list_of_songs.append(Song(row['Name'],row['Artist'], row['Year'], row['Genre']))
 
         current_user.songs = list_of_songs
         db.session.commit()

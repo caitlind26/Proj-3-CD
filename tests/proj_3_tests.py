@@ -17,7 +17,11 @@ def test_registration():
 
 
 """Tests for Accessing Dashboard as a Logged in User"""
-    def dashboard_test():
+    def dashboard_test(client):
+        response = client.get('/')
+        assert response.status_code == 200
+        assert b"Welcome" in response.data
+
 
 """Tests for Denying Access to Dashboard"""
 

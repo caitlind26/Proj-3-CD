@@ -31,6 +31,7 @@ def create_app():
     elif app.config["ENV"] == "testing":
         app.config.from_object("app.config.TestingConfig")
 
+
     # https://flask-login.readthedocs.io/en/latest/  <-login manager
     login_manager.init_app(app)
     login_manager.login_view = "auth.login"
