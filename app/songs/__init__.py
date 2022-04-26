@@ -8,11 +8,13 @@ from jinja2 import TemplateNotFound
 
 from app.db import db
 from app.db.models import Song
-from app.songs.forms import csv_upload
+from app.songs.forms import upload_csv_file
 from werkzeug.utils import secure_filename, redirect
 
 songs = Blueprint('songs', __name__,
                         template_folder='templates')
+
+upload = Blueprint('upload', __name__, template_folder='templates' )
 
 @songs.route('/songs', methods=['GET'], defaults={"page": 1})
 @songs.route('/songs/<int:page>', methods=['GET'])
@@ -29,7 +31,7 @@ def songs_browse(page):
 @songs.route('/songs/upload', methods=['POST', 'GET'])
 @login_required
 def songs_upload():
-    form = csv_upload()
+    form = upload_csv_file()
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
 
@@ -41,7 +43,7 @@ def songs_upload():
         with open(filepath) as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
-                list_of_songs.append(Song(row['Name'],row['Artist'], row['Year'], row['Genre']))
+                list_of_songs.append(Song(row['Name'],row['Artist']))
 
         current_user.songs = list_of_songs
         db.session.commit()
