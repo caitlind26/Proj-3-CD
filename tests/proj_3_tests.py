@@ -3,10 +3,11 @@ import logging
 from app import db
 from app.db.models import User, Song
 
+
 """Tests for Login"""
 
 def login_test():
-    caitlin = User( email = "caitlin@test.com", password = "password")
+    caitlin = User("caitlin@test.com","password")
     db.session.add(caitlin)
     rv = self.login('caitlin','password')
     assert 'Welcome' in rv.data
@@ -28,3 +29,7 @@ def test_registration():
 """Tests for Denying Access to Uploading the CSV file"""
 
 """Tests that the CSV file is Uploaded and Processed """
+
+def test_csv_upload(self):
+    with open ("music.csv", "w") as file:
+        w = csv.writer(file)

@@ -39,7 +39,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: caitlind26/proj3
+          images: caitlind26/proj3cd
 
       - name: Build and push
         uses: docker/build-push-action@v2

@@ -3,9 +3,6 @@ import logging
 from app import db
 from app.db.models import User, Song
 
-#def test_adding_song(application):
-#    with application.app_context():
-
 
 def test_adding_user(application):
     log = logging.getLogger("myApp")

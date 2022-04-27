@@ -104,6 +104,7 @@ LOGGING_CONFIG = {
             'maxBytes': 10000000,
             'backupCount': 5,
         },
+
     },
     'loggers': {
         '': {  # root logger

@@ -52,7 +52,7 @@ def songs_upload():
         current_user.songs = list_of_songs
         db.session.commit()
 
-        return redirect(url_for('songs.browse_songs'))
+        return redirect(url_for('songs.songs_browse'))
 
     try:
         return render_template('upload.html', form=form)

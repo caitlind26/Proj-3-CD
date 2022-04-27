@@ -166,3 +166,27 @@
 2022-04-21 20:31:23,659 [INFO] werkzeug: 172.21.0.1 - - [21/Apr/2022 20:31:23] "GET /register HTTP/1.1" 200 -
 2022-04-21 20:31:26,242 [INFO] werkzeug: 172.21.0.1 - - [21/Apr/2022 20:31:26] "GET / HTTP/1.1" 200 -
 2022-04-21 20:31:28,332 [INFO] werkzeug: 172.21.0.1 - - [21/Apr/2022 20:31:28] "GET /register HTTP/1.1" 200 -
+2022-04-27 00:13:53,008 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:13:53] "GET / HTTP/1.1" 200 -
+2022-04-27 00:13:56,198 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:13:56] "GET /register HTTP/1.1" 200 -
+2022-04-27 00:14:14,461 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:14:14] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2022-04-27 00:14:14,484 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:14:14] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-04-27 00:14:14,485 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:14:14] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-04-27 00:14:14,621 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:14:14] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-04-27 00:14:14,649 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:14:14] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-04-27 00:15:33,887 [INFO] werkzeug:  * Detected change in '/home/myuser/app/db/models/__init__.py', reloading
+2022-04-27 00:20:22,446 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:20:22] "GET / HTTP/1.1" 200 -
+2022-04-27 00:20:26,348 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:20:26] "GET /register HTTP/1.1" 200 -
+2022-04-27 00:20:36,273 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:20:36] "[32mPOST /register HTTP/1.1[0m" 302 -
+2022-04-27 00:20:36,302 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:20:36] "GET /login HTTP/1.1" 200 -
+2022-04-27 00:20:55,024 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:20:55] "GET /songs HTTP/1.1" 200 -
+2022-04-27 00:20:56,438 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:20:56] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 00:21:00,738 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:21:00] "[35m[1mPOST /songs/upload HTTP/1.1[0m" 500 -
+2022-04-27 00:21:00,760 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:21:00] "GET /songs/upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-04-27 00:21:00,761 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:21:00] "GET /songs/upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-04-27 00:21:00,884 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:21:00] "GET /songs/upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-04-27 00:21:00,908 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:21:00] "[36mGET /songs/upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-04-27 00:22:07,678 [INFO] werkzeug:  * Detected change in '/home/myuser/app/songs/__init__.py', reloading
+2022-04-27 00:22:11,582 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:22:11] "GET / HTTP/1.1" 200 -
+2022-04-27 00:22:13,941 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:22:13] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 00:22:18,290 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:22:18] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
+2022-04-27 00:22:18,416 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 00:22:18] "GET /songs HTTP/1.1" 200 -
