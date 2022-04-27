@@ -38,6 +38,8 @@ def configure_logging():
     log.info("My App Logger")
     log = logging.getLogger("myerrors")
     log.info("THis broke")
+    log = logging.getLogger("csv")
+    log.info("CSV file uploaded")
 
 
 
@@ -104,6 +106,14 @@ LOGGING_CONFIG = {
             'maxBytes': 10000000,
             'backupCount': 5,
         },
+        'file.handler.csv': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'RequestFormatter',
+            'filename': 'app/logs/csv.log',
+            'maxBytes': 10000000,
+            'backupCount': 5,
+        },
+
 
     },
     'loggers': {
