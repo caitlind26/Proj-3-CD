@@ -248,3 +248,30 @@
 2022-04-27 20:56:56,147 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 20:56:56] "GET /songs/upload HTTP/1.1" 200 -
 2022-04-27 20:57:01,104 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 20:57:01] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
 2022-04-27 20:57:01,300 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 20:57:01] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:04:01,478 [INFO] werkzeug:  * Detected change in '/home/myuser/app/logging_config/log_formatters/__Init__.py', reloading
+2022-04-27 21:06:23,025 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:06:23] "GET / HTTP/1.1" 200 -
+2022-04-27 21:06:46,418 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:06:46] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:08:14,850 [INFO] werkzeug:  * Detected change in '/home/myuser/app/logging_config/__init__.py', reloading
+2022-04-27 21:10:08,919 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:10:08] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 21:10:13,252 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:10:13] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
+2022-04-27 21:10:13,438 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:10:13] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:12:59,680 [INFO] werkzeug:  * Detected change in '/home/myuser/app/logging_config/__init__.py', reloading
+2022-04-27 21:16:30,204 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:16:30] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:16:34,473 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:16:34] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 21:16:50,111 [INFO] werkzeug:  * Detected change in '/home/myuser/app/logging_config/__init__.py', reloading
+2022-04-27 21:16:57,747 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:16:57] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
+2022-04-27 21:16:58,282 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:16:58] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:20:58,333 [INFO] werkzeug:  * Detected change in '/home/myuser/app/logging_config/__init__.py', reloading
+2022-04-27 21:21:05,603 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:21:05] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 21:21:10,688 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:21:10] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
+2022-04-27 21:21:10,819 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:21:10] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:23:31,764 [INFO] werkzeug:  * Detected change in '/home/myuser/app/logging_config/log_formatters/__init__.py', reloading
+2022-04-27 21:27:08,830 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:27:08] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:27:10,515 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:27:10] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 21:27:17,328 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:27:17] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
+2022-04-27 21:27:17,482 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:27:17] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:27:59,013 [INFO] werkzeug:  * Detected change in '/home/myuser/app/songs/__init__.py', reloading
+2022-04-27 21:31:00,185 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:31:00] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 21:31:01,332 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:31:01] "GET /songs/upload HTTP/1.1" 200 -
+2022-04-27 21:31:05,798 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:31:05] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
+2022-04-27 21:31:06,003 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:31:06] "GET /songs HTTP/1.1" 200 -

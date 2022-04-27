@@ -6,6 +6,7 @@ from flask import request, current_app
 
 from app.logging_config.log_formatters import RequestFormatter
 
+
 log_con = flask.Blueprint('log_con', __name__)
 
 
@@ -38,10 +39,12 @@ def configure_logging():
     log.info("My App Logger")
     log = logging.getLogger("myerrors")
     log.info("THis broke")
-    log = logging.getLogger("csv")
+
+
+def configure_csv_logging():
+    logging.config.dictConfig(LOGGING_CONFIG)
+    log = logging.getLogger("csvupload")
     log.info("CSV file uploaded")
-
-
 
 
 LOGGING_CONFIG = {
@@ -147,6 +150,11 @@ LOGGING_CONFIG = {
             'level': 'DEBUG',
             'propagate': False
         },
+        'csvupload': {  # if __name__ == '__main__'
+            'handlers': ['file.handler.csv'],
+            'level': 'INFO',
+            'propagate': False
+        }
 
     }
 }

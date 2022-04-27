@@ -1244,3 +1244,46 @@
 2022-04-27 20:57:01,102 [INFO] app: After Request
 2022-04-27 20:57:01,112 [INFO] app: Before Request
 2022-04-27 20:57:01,295 [INFO] app: After Request
+2022-04-27 21:06:22,648 [INFO] csv: CSV file uploaded
+2022-04-27 21:06:22,649 [INFO] app: Before Request
+2022-04-27 21:06:23,018 [INFO] app: After Request
+2022-04-27 21:06:46,289 [INFO] app: Before Request
+2022-04-27 21:06:46,414 [INFO] app: After Request
+2022-04-27 21:10:08,760 [INFO] app: Before Request
+2022-04-27 21:10:08,915 [INFO] app: After Request
+2022-04-27 21:10:12,790 [INFO] app: Before Request
+2022-04-27 21:10:13,250 [INFO] app: After Request
+2022-04-27 21:10:13,259 [INFO] app: Before Request
+2022-04-27 21:10:13,433 [INFO] app: After Request
+2022-04-27 21:16:29,526 [INFO] app: Before Request
+2022-04-27 21:16:30,197 [INFO] app: After Request
+2022-04-27 21:16:34,436 [INFO] app: Before Request
+2022-04-27 21:16:34,469 [INFO] app: After Request
+2022-04-27 21:16:56,841 [INFO] app: Before Request
+2022-04-27 21:16:57,745 [INFO] app: After Request
+2022-04-27 21:16:57,757 [INFO] app: Before Request
+2022-04-27 21:16:58,276 [INFO] app: After Request
+2022-04-27 21:21:05,445 [INFO] app: Before Request
+2022-04-27 21:21:05,599 [INFO] app: After Request
+2022-04-27 21:21:10,268 [INFO] app: Before Request
+2022-04-27 21:21:10,687 [INFO] app: After Request
+2022-04-27 21:21:10,695 [INFO] app: Before Request
+2022-04-27 21:21:10,815 [INFO] app: After Request
+2022-04-27 21:27:08,317 [INFO] app: Before Request
+2022-04-27 21:27:08,824 [INFO] app: After Request
+2022-04-27 21:27:10,414 [INFO] app: Before Request
+2022-04-27 21:27:10,502 [INFO] app: After Request
+2022-04-27 21:27:16,328 [INFO] app: Before Request
+2022-04-27 21:27:17,325 [INFO] app: After Request
+2022-04-27 21:27:17,339 [INFO] app: Before Request
+2022-04-27 21:27:17,476 [INFO] app: After Request
+2022-04-27 21:31:00,010 [INFO] app: Before Request
+2022-04-27 21:31:00,182 [INFO] app: After Request
+2022-04-27 21:31:01,310 [INFO] app: Before Request
+2022-04-27 21:31:01,329 [INFO] app: After Request
+2022-04-27 21:31:05,267 [INFO] app: Before Request
+2022-04-27 21:31:05,298 [INFO] root: URL: http://localhost/songs/upload , Remote Address: 172.23.0.1 , Request Method: POST , Request Path: /songs/upload, IP: 172.23.0.1, Host: localhost
+2022-04-27 21:31:05,298 [INFO] root: URL: http://localhost/songs/upload , Remote Address: 172.23.0.1 , Request Method: POST , Request Path: /songs/upload, IP: 172.23.0.1, Host: localhost
+2022-04-27 21:31:05,796 [INFO] app: After Request
+2022-04-27 21:31:05,807 [INFO] app: Before Request
+2022-04-27 21:31:05,999 [INFO] app: After Request

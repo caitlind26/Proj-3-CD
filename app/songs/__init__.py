@@ -1,11 +1,11 @@
 import csv
 import logging
+from app.logging_config import configure_csv_logging
 import os
 
 from flask import Flask, Blueprint, render_template, abort, url_for,current_app
 from flask_login import current_user, login_required
 from jinja2 import TemplateNotFound
-
 from app.db import db
 from app.db.models import Song
 from app.songs.forms import upload_csv_file
@@ -42,6 +42,8 @@ def songs_upload():
         filename = secure_filename(form.file.data.filename)
         filepath = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
         form.file.data.save(filepath)
+        configure_csv_logging()
+        logging.basicConfig(filename='csv.log', level= logging.INFO, format='[%(asctime)s] [%(process)d] %(remote_addr)s requested %(url)s, %(levelname)s : %(message)s')
         #user = current_user
         list_of_songs = []
         with open(filepath) as file:
