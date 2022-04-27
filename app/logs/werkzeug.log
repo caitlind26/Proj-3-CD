@@ -275,3 +275,4 @@
 2022-04-27 21:31:01,332 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:31:01] "GET /songs/upload HTTP/1.1" 200 -
 2022-04-27 21:31:05,798 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:31:05] "[32mPOST /songs/upload HTTP/1.1[0m" 302 -
 2022-04-27 21:31:06,003 [INFO] werkzeug: 172.23.0.1 - - [27/Apr/2022 21:31:06] "GET /songs HTTP/1.1" 200 -
+2022-04-27 21:40:24,654 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/upload_test.py', reloading
