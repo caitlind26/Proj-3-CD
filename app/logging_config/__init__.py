@@ -11,7 +11,6 @@ from app import config
 
 log_con = flask.Blueprint('log_con', __name__)
 
-
 @log_con.before_app_request
 def before_request_logging():
     current_app.logger.info("Before Request")
