@@ -15,7 +15,7 @@ class Config(object):
     LOG_DIR =  os.path.join(BASE_DIR, '../logs')
 class ProductionConfig(Config):
     pass
-
+#add stuff?
 
 class DevelopmentConfig(Config):
     DEBUG = True
