@@ -16,7 +16,7 @@ songs = Blueprint('songs', __name__,
 
 upload = Blueprint('upload', __name__, template_folder='templates' )
 
-UPLOAD_FOLDER = '/path/to/uploads'
+UPLOAD_FOLDER = '/app/uploads'
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 

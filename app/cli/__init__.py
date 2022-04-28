@@ -22,8 +22,8 @@ def create_database():
 @with_appcontext
 def create_uploads_folder():
     root=os.path.dirname(os.path.abspath(__file__))
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    upd= os.path.join(root, '../uploads')
+    #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    upd= os.path.join(root, '../../uploads')
     if not os.path.exists(upd):
         os.mkdir(upd)
 
