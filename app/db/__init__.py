@@ -29,3 +29,4 @@ def create_upload_folder():
     if not os.path.exists(uploadfolder):
         os.mkdir(uploadfolder)
     db.create_all()
+

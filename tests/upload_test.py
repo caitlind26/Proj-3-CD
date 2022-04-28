@@ -3,8 +3,6 @@ import logging
 from logging import config
 from pathlib import Path
 
-from app.songs import Song
-
 def upload_test():
     csv = Path(__file__)
     test_dir = csv.parent
