@@ -1,6 +1,10 @@
+import logging
+import os
+
 from flask import Blueprint, cli
 from flask_sqlalchemy import SQLAlchemy
 
+from app import config
 
 db = SQLAlchemy()
 
@@ -29,3 +33,4 @@ def create_upload_folder():
     if not os.path.exists(uploadfolder):
         os.mkdir(uploadfolder)
     db.create_all()
+
