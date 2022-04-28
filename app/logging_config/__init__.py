@@ -1,10 +1,13 @@
 import logging
+import os
 from logging.config import dictConfig
 
 import flask
 from flask import request, current_app
 
-from app.logging_config.log_formatters import RequestFormatter
+from app import config
+#from app import logging_config
+#from app.logging_config.log_formatters import RequestFormatter
 
 log_con = flask.Blueprint('log_con', __name__)
 
@@ -40,6 +43,10 @@ def configure_logging():
     log.info("THis broke")
 
 
+def configure_csv_logging():
+    logging.config.dictConfig(LOGGING_CONFIG)
+    log = logging.getLogger("csvupload")
+    log.info("CSV file uploaded")
 
 
 LOGGING_CONFIG = {
@@ -104,6 +111,14 @@ LOGGING_CONFIG = {
             'maxBytes': 10000000,
             'backupCount': 5,
         },
+        'file.handler.csv': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'RequestFormatter',
+            'filename': 'app/logs/csv.log',
+            'maxBytes': 10000000,
+            'backupCount': 5,
+        },
+
 
     },
     'loggers': {
@@ -137,6 +152,11 @@ LOGGING_CONFIG = {
             'level': 'DEBUG',
             'propagate': False
         },
+        'csvupload': {  # if __name__ == '__main__'
+            'handlers': ['file.handler.csv'],
+            'level': 'INFO',
+            'propagate': False
+        }
 
     }
 }

@@ -9,6 +9,7 @@ from flask_login import UserMixin
 
 class Song(db.Model):
     __tablename__ = 'songs'
+    __table_args__ = {'extend_existing': True}
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(300), nullable=True, unique=False)
     artist = db.Column(db.String(300), nullable=True, unique=False)
@@ -26,6 +27,7 @@ class Song(db.Model):
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
+    __table_args__ = {'extend_existing': True}
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(300), nullable=False, unique=True)
