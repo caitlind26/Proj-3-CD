@@ -1,10 +1,12 @@
 import logging
+import os
 from logging import config
 from logging.config import dictConfig
 
 import flask
 from flask import request, current_app
 
+from app import config
 from app.logging_config.log_formatters import RequestFormatter
 
 
