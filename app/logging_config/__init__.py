@@ -117,7 +117,7 @@ LOGGING_CONFIG = {
         },
         'file.handler.csv': {
             'class': 'logging.handlers.RotatingFileHandler',
-            'formatter': 'RequestFormatter',
+            'formatter': 'standard',
             'filename': os.path.join(config.Config.LOG_DIR,'csv.log'),
             'maxBytes': 10000000,
             'backupCount': 5,
