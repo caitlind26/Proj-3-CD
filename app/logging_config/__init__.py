@@ -1,6 +1,5 @@
 import logging
 import os
-from logging import config
 from logging.config import dictConfig
 
 import flask
