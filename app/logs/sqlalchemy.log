@@ -34421,3 +34421,9 @@ DROP TABLE songs
 DROP TABLE users
 2022-04-28 15:13:10,390 [INFO] sqlalchemy.engine.Engine: [no key 0.00031s] ()
 2022-04-28 15:13:10,400 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-04-28 15:18:06,420 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-04-28 15:18:06,423 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-04-28 15:18:06,423 [INFO] sqlalchemy.engine.Engine: [generated in 0.00052s] (1,)
+2022-04-28 15:18:06,594 [INFO] sqlalchemy.engine.Engine: ROLLBACK
